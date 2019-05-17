@@ -11,8 +11,39 @@
 </head>
 
 <body>
-    <div class="container">
-        
+    <div class="main-header-wrapper">
+        <header class="main-header group">
+            <div class="search-form">
+                <form action="/search" method="get">
+                    <input class="search-input" type="text" placeholder="Search">
+                </form>
+            </div> <!-- /.search-form -->
+
+            <div class="branding">
+                <h1 class="site-title">
+                    <img src="img/logo.png" class="logo" alt="Logo">
+                </h1>
+            </div> <!-- /.branding -->
+
+            <div class="shopping-cart">
+                <a class="cart-count contain-count" href="/cart">
+                    <span class="bag-count">0</span>
+                    <span class="bag-text">items</span>
+                </a>
+                
+                <div class="select-wrapper currency-switcher">
+                    <div class="selected-currency">GBP</div>
+                    <select id="currencies" name="currencies" data-currency-converter="">
+                        <option value="GBP" selected="selected">GBP</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+            </div> <!-- /.shopping-cart -->
+        </header>
     </div> <!-- /.container -->
 </body>
 

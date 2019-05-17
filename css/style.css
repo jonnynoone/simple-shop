@@ -1,6 +1,28 @@
+/* Pallete 
+Red - #ff001e
+*/
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Pacific Font Icons */
+@font-face {
+    font-family: 'Pacific';
+    src: url("../font/pacific-icons.eot") format("embedded-opentype"), url("../font/pacific-icons.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+.group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -11,9 +33,92 @@ body {
 	background-color: #1E1E1E;
 }
 
-.container {
-	height: 100%;
+.main-header-wrapper {
+	padding: 0 30px;
+}
+
+.main-header {
 	margin: 0 auto;
 	max-width: 1260px;
+	margin-bottom: 40px;
+	padding: 54px 0 25px;
+	border-bottom: solid 1px #aeaeae;
+}
+
+.main-header .search-form {
+	float: left;
+	width: 220px;
+	height: 147px;
+	display: table;
+}
+
+.main-header .search-form form {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+.main-header .search-form form:before {
+    font-family: 'Pacific';
+    font-size: 27px;
+    -webkit-font-smoothing: antialiased;
+    content: '\E001';
+    position: absolute;
+    left: 11px;
+    top: 55px;
+    color: #ff001e;
+}
+
+/* VAPOR BRANCH
+.main-header .search-form form .search-input {
+	height: 32px;
+	color: #ff001e;
+	padding: 0 6px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #ddd;
+}
+*/
+
+.main-header .search-form form .search-input {
+	color: #ff001e;
+    display: block;
+    height: 42px;
+    background: none;
+    padding: 5px 10px 5px 34px;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+	letter-spacing: 0.8px;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+input.search-input:focus {
+    outline: none !important;
+    border: 1px solid #aeaeae;
+    box-shadow: 0 0 10px #aeaeae;
+}
+
+.main-header .search-form form .search-input::placeholder {
+	color: #ff001e;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.main-header .branding {
+	float: left;
+	display: block;
+	text-align: center;
+	width: calc(100% - 440px);
+}
+
+.main-header .branding .logo {
+	max-width: 150px;
+}
+
+.main-header .shopping-cart {
+	float: left;
+	width: 220px;
+	height: 147px;
+	display: table;
 	background-color: yellow;
 }

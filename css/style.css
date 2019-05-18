@@ -1,5 +1,7 @@
 /* Pallete 
 Red - #ff001e
+Pale Blue - #5C8BB1
+Dark Blue - #152B3A
 */
 
 /* Roboto Font */
@@ -27,6 +29,7 @@ Red - #ff001e
 
 html, body {
 	height: 100%;
+	font-family: monospace;
 }
 
 body {
@@ -42,7 +45,7 @@ body {
 	max-width: 1260px;
 	margin-bottom: 40px;
 	padding: 54px 0 25px;
-	border-bottom: solid 1px #aeaeae;
+	border-bottom: solid 1px #5C8BB1;
 }
 
 .main-header .search-form {
@@ -66,59 +69,60 @@ body {
     position: absolute;
     left: 11px;
     top: 55px;
-    color: #ff001e;
+    color: #5C8BB1;
 }
 
-/* VAPOR BRANCH
 .main-header .search-form form .search-input {
-	height: 32px;
-	color: #ff001e;
-	padding: 0 6px;
+	height: 35px;
+	width: 220px;
+	color: #5C8BB1;
 	font-size: 14px;
 	font-weight: bold;
-	background-color: #ddd;
-}
-*/
-
-.main-header .search-form form .search-input {
-	color: #ff001e;
-    display: block;
-    height: 42px;
-    background: none;
-    padding: 5px 10px 5px 34px;
-    border: 1px solid #aeaeae;
-    border-radius: 3px;
-	letter-spacing: 0.8px;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	padding: 0 6px 0 34px;
+	background-color: #eee;
 }
 
 input.search-input:focus {
     outline: none !important;
-    border: 1px solid #aeaeae;
     box-shadow: 0 0 10px #aeaeae;
-}
-
-.main-header .search-form form .search-input::placeholder {
-	color: #ff001e;
-	letter-spacing: 0.8px;
-	text-transform: uppercase;
 }
 
 .main-header .branding {
 	float: left;
+	height: 147px;
 	display: block;
 	text-align: center;
 	width: calc(100% - 440px);
 }
 
-.main-header .branding .logo {
-	max-width: 150px;
+.main-header .branding .site-title .logo {
+	margin: 0 auto;
+	max-height: 127px;
 }
 
-.main-header .shopping-cart {
+.main-header .shopping-cart-container {
 	float: left;
 	width: 220px;
 	height: 147px;
 	display: table;
-	background-color: yellow;
+	text-align: right;
+}
+
+.main-header .shopping-cart-container .shopping-cart {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main-header .shopping-cart-container .shopping-cart #currencies {
+	height: 35px;
+	width: 220px;
+	padding: 0 6px;
+	color: #5C8BB1;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #eee;
+}
+
+.main-header .shopping-cart-container .shopping-cart #currencies:focus {
+    box-shadow: 0 0 10px #aeaeae;
 }
